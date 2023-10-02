@@ -1,8 +1,38 @@
 *,*:before,*:after{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;                                 
+    -webkit-box-sizing: border-box;
 }
 
 body{
     font-family: 'Open Sans', sans-serif;
+    color: #cdcdcd;
 }
+
+:root{
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #cdcdcd;
+}
+
+input,              
+button,
+textarea{                                               /*retirar bordas dos elementos*/
+    border: 0;
+}
+
+img{
+    max-width: 100%;
+    border: 0;
+}
+
+.font-zero{
+    font-size: 0%;
+} 
