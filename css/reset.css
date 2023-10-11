@@ -24,7 +24,7 @@ a:hover{
 
 input,              
 button,
-textarea{                                               /*retirar bordas dos elementos*/
+textarea{                                               /*retirar bordas dos */
     border: 0;
 }
 
@@ -33,6 +33,20 @@ img{
     border: 0;
 }
 
+
+/*----- GERAIS -----*/
+
 .font-zero{
     font-size: 0%;
 } 
+
+.row{
+    float: left;
+    width: 100%;
+}
+
+.content{
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto;
+}
