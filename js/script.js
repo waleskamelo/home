@@ -13,7 +13,8 @@
         loop:true,
         margin:10,
         nav: true,
-        navText: ['<i class="fa-solid fa-chevron-left"></i>','<i class="fa-solid fa-chevron-right"></i>']
+        navText: ['<i class="fa-solid fa-chevron-left"></i>','<i class="fa-solid fa-chevron-right"></i>'],
+        dots: true
     });
 
  });

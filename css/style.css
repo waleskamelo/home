@@ -21,7 +21,7 @@
 #nav-toggle span{
     border-radius: 1px;                                         /*barra de spam com as bordas arredondada*/
     -webkit-border-radius: 1px;                                 /*?*/
-    background: #1c1c1c;                                         /*fundo branco*/
+    background: #1c1c1c;                                        /*fundo branco*/
     height: 2px;                                                /*tamanho do spam*/
     width: 30px;                                                /*def tamanho do spam pq nao existe um conteudo*/
     display: block;                                             /*transforma spam em bloco*/
