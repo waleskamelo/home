@@ -1,5 +1,5 @@
 .header{
-    border-top: 6px solid #847c9b;
+    border-top: 6px solid #1c1c1c;
 }
 
 /*----- BOTAO DE SELECAO MOBILE -----*/
@@ -10,9 +10,9 @@
     position: fixed;                                            /*botao fixado*/
     z-index: 15;                                                /*o botao ficar acima do menu*/
     display: none;                                              /*deixa o botao escondido quando estiver maior que 960*/
-    top: 0;                                                     /*botao no topo*/
+    top: 5;                                                     /*botao no topo*/
     right: 0;                                                   /*botao a direita*/
-    background: #847c9b;                                      /*fundo do botao na mesma cor da barra superior*/
+    background: #ffffff;                                      /*fundo do botao na mesma cor da barra superior*/
     padding: 15px;                                              /*espacamento entre os elementos dentro do botao*/
     transition: all .4s easy;                                   /*transicao suave*/
     -webkit-transition: all .4s easy;                           /*?*/
@@ -21,7 +21,7 @@
 #nav-toggle span{
     border-radius: 1px;                                         /*barra de spam com as bordas arredondada*/
     -webkit-border-radius: 1px;                                 /*?*/
-    background: #fff;                                         /*fundo branco*/
+    background: #1c1c1c;                                         /*fundo branco*/
     height: 2px;                                                /*tamanho do spam*/
     width: 30px;                                                /*def tamanho do spam pq nao existe um conteudo*/
     display: block;                                             /*transforma spam em bloco*/
@@ -63,18 +63,18 @@
 }
 
 .header-nav ul li a {                      
-    color: #8a7c9b;                
+    color: #1c1c1c;                
     text-transform: uppercase;                              /*deixa o texto maiusculo*/
     font-weight: 600;                                       /*largura da fonte*/
     font-size: 0.875rem;                                    /*tamanho da fonte*/
 }
 
 .header-nav ul li a:hover {                                       
-    color: #b19cd9;                                                   
+    color: #e00000;                                                   
 }
 
 .header-nav ul li a.active {                                       
-    color: #b19cd9;                                                   
+    color: #e00000;                                                   
 }
 
 /*----- SEARCH ----*/
@@ -86,31 +86,31 @@
 }
 
 .header-search input::-webkit-input-placeholder { /*chrome, opera, safari*/
-    color: #fff;
+    color: #ffffff;
 }
 .header-search input:-moz-placeholder { /*mozilla firefox 4 a 18*/
-    color: #fff;
+    color: #ffffff;
     opacity: 1;
 }
 .header-search input::-moz-placeholder { /*firefox 19+*/
-    color: #fff;
+    color: #ffffff;
     opacity: 1;
 }
 .header-search input:-ms-input-placeholder { /*IE 10+*/
-    color: #fff;
+    color: #ffffff;
 }
 .header-search input::-ms-input-placeholder { /*microsoft edge*/
-    color: #fff;
+    color: #ffffff;
 }
 .header-search input::placeholder { /*browsers modernos*/
-    color: #fff;
+    color: #ffffff;
 }
 
 .header-search input{
     width: 100%;
-    color: #fff;
+    color: #ffffff;
     text-transform: uppercase;
-    background: #e9e9e9;
+    background: #1c1c1c;
     padding: 10px;
     border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -120,8 +120,8 @@
     position: absolute;                                         /*absolute para ficar flutuante*/
     top: 50%;
     right: 8px;
-    color: #fff;
-    font-size: 1.5rem;
+    color: #ffffff;
+    font-size: 1.1rem;
     background: transparent;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
@@ -136,7 +136,7 @@
 }
 
 .header-networks a{
-    color: #fff;
+    color: #1c1c1c;
     font-size: 2rem;
     margin: 0 10px;
 }
@@ -160,7 +160,7 @@
     .header-collapse{
         overflow-y: auto;
         position: fixed;
-        background: rgb(200,162,200);                          /*o fundo em rgba porque vai ter uma transparencia*/
+        background: rgb(255,255,255);                          /*o fundo em rgba porque vai ter uma transparencia*/
         width: 100%;
         height: 100%;
         z-index: 10;
@@ -188,7 +188,7 @@
     }
 
     .header-nav ul li a {                                       /*configuracao do texto do menu mobile*/
-        color: #fff;                                                     
+        color: #1c1c1c;                                                     
         font-size: 1.4rem;                                   
     }
 
@@ -212,7 +212,7 @@
         margin-left:3%;                                    /*espaco na esquerda do menu*/
     }
     .header-nav ul li a.active:before{                     /*configuracao da barrinha que acompanha o menu desktop*/                                   
-        background: #b19cd9; 
+        background: #e00000; 
         content: "";
         position: absolute;
         height: 6px;
