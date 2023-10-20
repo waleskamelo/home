@@ -9,12 +9,13 @@
 .owl-lazy{
     height: 100%;
     position: relative;
+    
 }
 .owl-item > img {
-    height: 100%;
+    width: 100%;
 }
 
-.owl-lazy{
+.owl-item{
     padding: 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,6 +26,8 @@
 .owl-next{
     position: absolute;
     background: rgba(0,0,0,.5);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
     top: 50%;
     left: 0;
     padding: 20px 12px;
@@ -66,4 +69,10 @@
 
 .owl-dots .owl-dot.active{
     background: #e00000;
+}
+
+/*----- CAROUSEL MAIN -----*/
+
+#carousel_main{
+    height: calc(100% - 80px);
 }

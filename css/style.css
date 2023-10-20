@@ -155,6 +155,12 @@
         height: 58px;
     }
 
+    /*----- CAROUSEL MAIN -----*/
+
+    #carousel_main{
+        height: calc(100% - 58px);
+    }
+
     /*----- MENU MOBILE -----*/
 
     .header-collapse{
