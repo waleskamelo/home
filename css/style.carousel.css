@@ -74,5 +74,6 @@
 /*----- CAROUSEL MAIN -----*/
 
 #carousel_main{
-    height: calc(100% - 80px);
+    height: calc(80% - 80px);
 }
+
