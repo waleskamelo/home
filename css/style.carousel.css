@@ -1,4 +1,4 @@
-.owl-carousel{
+/* .owl-carousel{
     float: left;
 }
 
@@ -26,8 +26,8 @@
 .owl-next{
     position: absolute;
     background: rgba(0,0,0,.5);
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
+    transform: translateY(-60%);
+    -webkit-transform: translateY(-60%);
     top: 50%;
     left: 0;
     padding: 20px 12px;
@@ -76,4 +76,4 @@
 #carousel_main{
     height: calc(80% - 80px);
 }
-
+ */

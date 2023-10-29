@@ -2,6 +2,10 @@
     border-top: 6px solid #1c1c1c;
 }
 
+.section{
+    background-color: red;
+}
+
 /*----- BOTAO DE SELECAO MOBILE -----*/
 
 #nav-toggle{
@@ -158,9 +162,9 @@
 
     /*----- CAROUSEL MAIN -----*/
 
-    #carousel_main{
+    /* #carousel_main{
         height: calc(100% - 58px);
-    }
+    } */
 
     /*----- MENU MOBILE -----*/
 
