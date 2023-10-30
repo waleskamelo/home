@@ -1,25 +1,11 @@
 .header {
-    border-top: 6px solid #1c1c1c;
+    border-top: 3px solid #e00000;
     height: 10vh;
+    position: fixed;
 }
 
-
-/*----- TEXT MAIN -----*/
-
-.main {
-    text-align: center;
-    min-height: 87vh;
-    position: relative;
-    /* background: linear-gradient(to bottom, white, grey); */
-}
-
-.text {
-    position: absolute;
-    transform: translateX(0%);
-    top: 46%;
-    right: 41%;
-    color: black;
-    text-transform: uppercase;
+html, body {
+    overflow: hidden;
 }
 
 
@@ -33,7 +19,7 @@
     display: none;
     top: 5;
     right: 0;
-    background: #ffffff;
+    background: white;
     padding: 15px;
     transition: all .4s easy;
     -webkit-transition: all .4s easy;
@@ -76,19 +62,22 @@
 .header-nav {
     padding: 25px 0;
     float: left;
+    /* opacity: 0.8; */
 }
 
 .header-nav ul li {
     display: inline-block;
     margin: 0 3px;
     position: relative;
+    justify-content: space-between;
 }
 
 .header-nav ul li a {
-    color: #1c1c1c;
+    color: #ffffff;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 0.875rem;
+    margin: 11px;
 }
 
 .header-nav ul li a:hover {
@@ -105,7 +94,7 @@
 .header-search {
     position: relative;
     float: right;
-    margin: 18px 0;
+    margin: 24px 0;
 }
 
 .header-search input::-webkit-input-placeholder {
@@ -141,21 +130,21 @@
 }
 
 .header-search input {
-    width: 100%;
-    color: #ffffff;
+    width: 80%;
+    color: #1c1c1c;
+    border: 1px solid #1c1c1c;
     text-transform: uppercase;
-    background: #1c1c1c;
-    padding: 10px;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
+    background: #ffffff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
 }
 
 .header-search button {
     position: absolute;
-    top: 50%;
-    right: 8px;
-    color: #ffffff;
-    font-size: 1.1rem;
+    top: 57%;
+    right: 56px;
+    color: #1c1c1c;
+    font-size: 0.7rem;
     background: transparent;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
@@ -227,14 +216,18 @@
     /*----- SEARCH MOBILE ----*/
 
     .header-search {
-        max-width: 300px;
+        max-width: 250px;
         margin: 0 auto;
         float: none;
     }
 
     .header-search input {
-        padding: 15px;
-        margin: 15px;
+        padding: 2px;
+        margin: 2px;
+    }
+
+    .header-search button {
+        top: 50%;
     }
 
 }
