@@ -28,7 +28,7 @@ a:hover{
 
 input,              
 button,
-textarea{                                               /*retirar bordas dos */
+textarea{                                              
     border: 0;
 }
 

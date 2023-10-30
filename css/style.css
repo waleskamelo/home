@@ -1,117 +1,146 @@
-.header{
+.header {
     border-top: 6px solid #1c1c1c;
+    height: 10vh;
 }
 
-.section{
-    background-color: red;
+
+/*----- TEXT MAIN -----*/
+
+.main {
+    text-align: center;
+    min-height: 87vh;
+    position: relative;
+    /* background: linear-gradient(to bottom, white, grey); */
 }
 
-/*----- BOTAO DE SELECAO MOBILE -----*/
-
-#nav-toggle{
-    border-bottom-left-radius: 8px;                             /*botao com esquerda arredondada*/
-    -webkit-border-bottom-left-radius: 8px;                     /*?*/
-    position: fixed;                                            /*botao fixado*/
-    z-index: 15;                                                /*o botao ficar acima do menu*/
-    display: none;                                              /*deixa o botao escondido quando estiver maior que 960*/
-    top: 5;                                                     /*botao no topo*/
-    right: 0;                                                   /*botao a direita*/
-    background: #ffffff;                                      /*fundo do botao na mesma cor da barra superior*/
-    padding: 15px;                                              /*espacamento entre os elementos dentro do botao*/
-    transition: all .4s easy;                                   /*transicao suave*/
-    -webkit-transition: all .4s easy;                           /*?*/
+.text {
+    position: absolute;
+    transform: translateX(0%);
+    top: 46%;
+    right: 41%;
+    color: black;
+    text-transform: uppercase;
 }
 
-#nav-toggle span{
-    border-radius: 1px;                                         /*barra de spam com as bordas arredondada*/
-    -webkit-border-radius: 1px;                                 /*?*/
-    background: #1c1c1c;                                        /*fundo branco*/
-    height: 2px;                                                /*tamanho do spam*/
-    width: 30px;                                                /*def tamanho do spam pq nao existe um conteudo*/
-    display: block;                                             /*transforma spam em bloco*/
-    transition: all .4s easy;                                   /*transicao suave*/
-    -webkit-transition: all .4s easy;                           /*?*/
-    transform: translate3d(0,0,0);                              /*permite rotacionar o span*/
-    -webkit-transform: translate3d(0,0,0);                      /*?*/
+
+/*----- MOBILE SELECT BUTTON -----*/
+
+#nav-toggle {
+    border-bottom-left-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    position: fixed;
+    z-index: 15;
+    display: none;
+    top: 5;
+    right: 0;
+    background: #ffffff;
+    padding: 15px;
+    transition: all .4s easy;
+    -webkit-transition: all .4s easy;
 }
 
-#nav-toggle span:nth-child(2){
-    margin: 6px 0;                                              /*colocando espacamento no span2 da caixa, fazendo ela empurrar as outras duas*/
-} 
-
-#nav-toggle.active span:nth-child(1){
-    transform: rotate(45deg) translate3d(6px,6px,0);            /*ajustando rotacao do spam1*/
-    -webkit-transform: rotate(45deg) translate3d(6px,6px,0);    /*?*/
+#nav-toggle span {
+    border-radius: 1px;
+    -webkit-border-radius: 1px;
+    background: #1c1c1c;
+    height: 2px;
+    width: 30px;
+    display: block;
+    transition: all .4s easy;
+    -webkit-transition: all .4s easy;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
 }
 
-#nav-toggle.active span:nth-child(2){
-    opacity: 0;                                                 /*escondendo spam2 para formar o X*/
+#nav-toggle span:nth-child(2) {
+    margin: 6px 0;
 }
 
-#nav-toggle.active span:nth-child(3){
-    transform: rotate(-45deg) translate3d(6px,-5px,0);  /*ajustando rotacao do spam3*/
-    -webkit-transform: rotate(-45deg) translate3d(6px,-5px,0);  /*?*/
+#nav-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate3d(6px, 6px, 0);
+    -webkit-transform: rotate(45deg) translate3d(6px, 6px, 0);
 }
 
-/*----- MENU DESKTOP -----*/
+#nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
 
-.header-nav{
+#nav-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate3d(6px, -5px, 0);
+    -webkit-transform: rotate(-45deg) translate3d(6px, -5px, 0);
+}
+
+
+/*----- DESKTOP MENU -----*/
+
+.header-nav {
     padding: 25px 0;
     float: left;
 }
 
-.header-nav ul li{                                          /*configuracao do menu mobile*/
+.header-nav ul li {
     display: inline-block;
-    margin: 0 3px;     
-    position: relative;                                     /*configuracao do texto do menu mobile*/            
+    margin: 0 3px;
+    position: relative;
 }
 
-.header-nav ul li a {                      
-    color: #1c1c1c;                
-    text-transform: uppercase;                              /*deixa o texto maiusculo*/
-    font-weight: 600;                                       /*largura da fonte*/
-    font-size: 0.875rem;                                    /*tamanho da fonte*/
+.header-nav ul li a {
+    color: #1c1c1c;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.875rem;
 }
 
-.header-nav ul li a:hover {                                       
-    color: #e00000;                                                   
+.header-nav ul li a:hover {
+    color: #e00000;
 }
 
-.header-nav ul li a.active {                                       
-    color: #e00000;                                                   
+.header-nav ul li a.active {
+    color: #e00000;
 }
 
 
 /*----- SEARCH ----*/
 
-.header-search{
+.header-search {
     position: relative;
     float: right;
     margin: 18px 0;
 }
 
-.header-search input::-webkit-input-placeholder { /*chrome, opera, safari*/
-    color: #ffffff;
-}
-.header-search input:-moz-placeholder { /*mozilla firefox 4 a 18*/
-    color: #ffffff;
-    opacity: 1;
-}
-.header-search input::-moz-placeholder { /*firefox 19+*/
-    color: #ffffff;
-    opacity: 1;
-}
-.header-search input:-ms-input-placeholder { /*IE 10+*/
-    color: #ffffff;
-}
-.header-search input::-ms-input-placeholder { /*microsoft edge*/
-    color: #ffffff;
-}
-.header-search input::placeholder { /*browsers modernos*/
+.header-search input::-webkit-input-placeholder {
+    /*chrome, opera, safari*/
     color: #ffffff;
 }
 
-.header-search input{
+.header-search input:-moz-placeholder {
+    /*mozilla firefox 4 a 18*/
+    color: #ffffff;
+    opacity: 1;
+}
+
+.header-search input::-moz-placeholder {
+    /*firefox 19+*/
+    color: #ffffff;
+    opacity: 1;
+}
+
+.header-search input:-ms-input-placeholder {
+    /*IE 10+*/
+    color: #ffffff;
+}
+
+.header-search input::-ms-input-placeholder {
+    /*microsoft edge*/
+    color: #ffffff;
+}
+
+.header-search input::placeholder {
+    /*moderns browsers*/
+    color: #ffffff;
+}
+
+.header-search input {
     width: 100%;
     color: #ffffff;
     text-transform: uppercase;
@@ -121,8 +150,8 @@
     -webkit-border-radius: 8px;
 }
 
-.header-search button{
-    position: absolute;                                         /*absolute para ficar flutuante*/
+.header-search button {
+    position: absolute;
     top: 50%;
     right: 8px;
     color: #ffffff;
@@ -132,15 +161,16 @@
     -webkit-transform: translateY(-50%);
 }
 
+
 /*----- NETWORKS HEADER -----*/
 
-.header-networks{
+.header-networks {
     text-align: center;
     margin: 20px 0;
     display: none;
 }
 
-.header-networks a{
+.header-networks a {
     color: #1c1c1c;
     font-size: 2rem;
     margin: 0 10px;
@@ -149,81 +179,73 @@
 
 /*----- BREAKPOINTS MAX-WIDTH -----*/
 
-@media (max-width:959.9px){
-    #nav-toggle, .header-networks{
-        display: block;                                         /*mostra o botao de navegacao quando estiver menor que 960*/
+@media (max-width:959.9px) {
+
+    #nav-toggle,
+    .header-networks {
+        display: block;
     }
 
-    /*----- HEADER -----*/
-
-    .header{
-        height: 58px;
-    }
-
-    /*----- CAROUSEL MAIN -----*/
-
-    /* #carousel_main{
-        height: calc(100% - 58px);
-    } */
 
     /*----- MENU MOBILE -----*/
 
-    .header-collapse{
+    .header-collapse {
         overflow-y: auto;
         position: fixed;
-        background: rgb(255,255,255);                          /*o fundo em rgba porque vai ter uma transparencia*/
+        background: rgb(255, 255, 255);
         width: 100%;
         height: 100%;
         z-index: 10;
-        padding: 15px;                                           /*espacamento dentro do menu*/
+        padding: 15px;
         top: -100%;
         left: 0;
         transition: top .4s ease;
         -webkit-transition: top .4s ease;
     }
 
-    .header-collapse.active{
+    .header-collapse.active {
         top: 0%;
     }
 
-    .header-nav{
+    .header-nav {
         padding: 25px 0;
         float: none;
     }
 
-    .header-nav ul li{                                          /*configuracao do menu mobile*/
-        width: 100%;                
+    .header-nav ul li {
+        width: 100%;
         text-align: center;
-        padding: 5px;  
-                           
+        padding: 5px;
+
     }
 
-    .header-nav ul li a {                                       /*configuracao do texto do menu mobile*/
-        color: #1c1c1c;                                                     
-        font-size: 1.4rem;                                   
+    .header-nav ul li a {
+        color: #1c1c1c;
+        font-size: 1.4rem;
     }
 
     /*----- SEARCH MOBILE ----*/
 
-    .header-search{
-        max-width: 300px; 
+    .header-search {
+        max-width: 300px;
         margin: 0 auto;
         float: none;
     }
 
-    .header-search input{
+    .header-search input {
         padding: 15px;
         margin: 15px;
-    }   
+    }
 
 }
 
-@media (min-width:960px){
-    .header-nav{
-        margin-left:3%;                                    /*espaco na esquerda do menu*/
+@media (min-width:960px) {
+    .header-nav {
+        margin-left: 3%;
     }
-    .header-nav ul li a.active:before{                     /*configuracao da barrinha que acompanha o menu desktop*/                                   
-        background: #e00000; 
+
+    .header-nav ul li a.active:before {
+        background: #e00000;
         content: "";
         position: absolute;
         height: 6px;
@@ -231,26 +253,28 @@
         top: -31px;
         left: 0;
     }
-} 
+}
 
-@media (min-width:1024px){
-    .header-nav ul li{                                                   
-      margin: 0 10px;
+@media (min-width:1024px) {
+    .header-nav ul li {
+        margin: 0 10px;
     }
 }
 
-@media (min-width:1144px){
-    .header-nav ul li a{                                                   
-      font-size: 1rem;
+@media (min-width:1144px) {
+    .header-nav ul li a {
+        font-size: 1rem;
     }
 }
 
-@media (min-width:1280px){
+@media (min-width:1280px) {
+
     /*HEADER*/
-    .header-nav ul li{                                                   
-      margin: 0 8px;
+    .header-nav ul li {
+        margin: 0 8px;
     }
-    .header-search{
+
+    .header-search {
         width: 260px;
     }
 }
