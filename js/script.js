@@ -4,6 +4,5 @@
         e.preventDefault();
         $(this).toggleClass('active');
         $('.header-collapse').toggleClass('active');
-    }); 
-
+    });
  });
